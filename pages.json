@@ -22,40 +22,34 @@
     }
 
   }],
-  "subPackages": [
-    {
-      "root": "subpkg",
-      "pages": [
-        
+  "subPackages": [{
+    "root": "subpkg",
+    "pages": [
+
       {
-                    "path" : "goods_detail/goods_detail",
-                    "style" :                                                                                    
-                { 
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-                ,{
-                    "path" : "goods_list/goods_list",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-                ,{
-                    "path" : "search/search",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
-    }
-  ],
+        "path": "goods_detail/goods_detail",
+        "style": {
+          "enablePullDownRefresh": false
+        }
+
+      }, {
+        "path": "goods_list/goods_list",
+        "style": {
+          "onReachBottomDistance": 150,
+          "enablePullDownRefresh": true,
+          "backgroundColor": "#F8F8F8"
+        }
+
+      }, {
+        "path": "search/search",
+        "style": {
+
+          "enablePullDownRefresh": false
+        }
+
+      }
+    ]
+  }],
   "globalStyle": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "保锅商城",
